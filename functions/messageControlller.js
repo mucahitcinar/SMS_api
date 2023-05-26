@@ -55,10 +55,8 @@ exports.createMessage=async (req,res,next)=>
                     let SMS=await Message.create({context:`https://www.google.com/maps?q=${truncatedBody}`})
                     res.status(200).json({
                         status:"success",
-                        data:
-                        {
-                           SMS
-                        }
+                        SMS
+                      
                     })
                     
                   });
@@ -95,10 +93,8 @@ exports.getAllMessages=async(req,res,next)=>
        res.status(200).json(
         {
             status:"success",
-            data:
-            {
-                all
-            }
+            all
+          
         }
        )
     }

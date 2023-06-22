@@ -1,5 +1,5 @@
 const express=require("express")
-const messageControllers=require("C:/Users/mücahit/Documents/GitHub/SMS_api/functions/messageControlller")
+const messageControllers=require("../functions/messageControlller")
 const router=express.Router()
 
 
